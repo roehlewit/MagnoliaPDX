@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+	color: var(--p-color);
+}
+
+body {
+	margin: auto;
+	padding: 0;
+	max-width: 1300px;
+	width: 100%;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+header {
+	background: url('./images/Ctablefront.jpeg') no-repeat
+		center center;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	height: 800px;
+	width: 100%;
+}
+
+.banner-container {
+	background: rgba(255, 255, 255, 0.45);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100px;
+	width: 100%;
+}
+
+.banner-title {
+	text-align: center;
+	padding-left: 20px;
+}
+
+.banner-title h1 {
+	font-size: 3em;
+}
+
+.banner-title p {
+	margin-top: 0;
+	font-size: 0.8rem;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.links a {
+	padding: 0px 20px 0 0;
+}
+
+.toggle {
+	display: none;
+	opacity: 0;
+}
+.toggle a {
+	padding: 0px 10px;
+}
+
+.menu-btn {
+	background-color: transparent;
+	outline: 0;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px 5px;
+	margin: 6px 10px 0 0;
+	cursor: pointer;
+}
+
+.menu-btn:active {
+	transform: scale(0.98);
+	outline: 0;
+}
+
+.contactUs {
+    display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.contactUs .banner-title {
+    font-size: 2rem;
+    margin: 0 -80px;
+}
+
+.contact-btn {
+	margin: auto;
+}
+
+.contactbtn {
+	height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.contactbtn:active {
+    outline: 0;
+}
+
+.aboutUs {
+	margin-top: 10%;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.about-section {
+	margin-top: 10px;
+	padding: 0px 30px;
+}
+
+article {
+	display: flex;
+	position: relative;
+}
+
+.tabletop {
+	flex: 1 0 20%;
+	height: 450px;
+}
+.alexphoto {
+	position: absolute;
+	bottom: -40px;
+	left: 30%;
+	height: 200px;
+	width: 220px;
+	border-radius: 60%;
+	z-index: 1;
+}
+
+article p {
+	flex: 1 1 70%;
+	margin: 10px;
+	padding: 10px;
+	font-size: 1.2em;
+	color: var(--p-color);
+}
+
+article button {
+	position: absolute;
+	background: transparent;
+	border: 0;
+	font-style: italic;
+	cursor: pointer;
+	outline: 0;
+}
+
+.services-bg {
+	margin-top: 30%;
+}
+
+.services-bg h1 {
+	text-align: center;
+	font-size: 4rem;
+}
+
+.services {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	margin: 30px;
+	text-align: center;
+}
+
+.service-box {
+	border: 1px solid black;
+	border-radius: 5px;
+}
