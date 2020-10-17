@@ -71,7 +71,7 @@ header {
 /* Internal Links */
 
 .toggle {
-	display: flex;
+	display: none;
 }
 .toggle a {
 	padding: 0px 10px;
