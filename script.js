@@ -1,16 +1,30 @@
-//Variables
+// UI Variables
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.toggle');
+const form = document.getElementById('contact');
 
-//Event Listeners
+// State functions for contact form & gallery
+
+const PageState = function() {
+        let currentState = contactState(this);
+
+        this.init = function () {
+          this.change(new contactState);
+        }
+
+        this.change = function(state) {
+          currentState = state;
+        }
+};
+
+
+// EL for nav menu
 menuBtn.addEventListener('click', () => {
 	if (menu.style.display === 'none') {
-        menu.style.transition = 'all 1s';
         menu.style.display = 'flex';
-        menu.style.opacity = '1';
 	} else {
         menu.style.display = 'none';
 	}
 });
 
-
+ 
