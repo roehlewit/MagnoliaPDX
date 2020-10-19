@@ -87,8 +87,7 @@ header {
 	padding: 0px 10px;
 }
 
-.menu-btn,
-.gallery-btn button {
+.menu-btn {
 	font-weight: 200;
 	background-color: transparent;
 	outline: 0;
@@ -119,14 +118,17 @@ header {
 	justify-content: center;
 }
 
-.contactbtn {
+.contactbtn, 
+.gallery-btn button {
 	height: 50px;
 	width: 150px;
 	border-radius: 5px;
 	cursor: pointer;
 	outline: 0;
 	background-color: #303036;
-	color: seashell;
+	color: #fff;
+	letter-spacing: .5px;
+	font-weight: 400;
 }
 
 .contactbtn:active {
@@ -180,7 +182,6 @@ header {
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 20px;
 	text-align: center;
-
 	margin: 40px;
 }
 
@@ -188,7 +189,7 @@ header {
 	border: 2px solid black;
 	border-radius: 5px;
 	background-color: #303036;
-	color: seashell;
+	color: #fff;
 	
 }
 
@@ -216,11 +217,6 @@ header {
 
 .gallery-img {
 	margin-right: 10%;
-}
-
-.gallery-btn button {
-	background-color: #303036;
-	color: seashell;
 }
 
 .gallery-btn button:active {
@@ -333,10 +329,7 @@ footer {
 
 	.contactUs {	
 		justify-content: center;
-	}
-
-	.contact-title {
-		margin-left: 8%;
+		margin-right: -5%;
 	}
 
 	nav {
