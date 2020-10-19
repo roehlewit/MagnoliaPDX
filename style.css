@@ -305,7 +305,7 @@ footer {
 	}
 
 	header {
-		background-size: 480px;
+		background-size: 400px;
 		flex-direction: column;
 		height: 400px;
 	}
@@ -328,11 +328,14 @@ footer {
 		font-size: 12px;
 	}
 
-	.alexphoto,
-	.tree-img img,
-	.links i  {
+	.alexphoto {
 		display: none;
 	}
+         tree-img {display: none;}
+
+        .links i {
+            display: none;}
+
 
 	.contactUs {
 		height: 300px;
