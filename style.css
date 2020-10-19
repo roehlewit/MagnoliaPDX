@@ -305,7 +305,7 @@ footer {
 	}
 
 	header {
-		background-size: 400px;
+		background-size: 480px;
 		flex-direction: column;
 		height: 400px;
 	}
@@ -374,6 +374,7 @@ footer {
 
 	.gallery-img {
 		margin: auto;
+                width: 75%;
 	}
 
 	form {
