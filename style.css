@@ -331,7 +331,7 @@ footer {
 	.alexphoto {
 		display: none;
 	}
-         tree-img {display: none;}
+         .tree-img img {display: none;}
 
         .links i {
             display: none;}
