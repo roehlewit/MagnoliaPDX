@@ -298,7 +298,7 @@ footer {
 	margin: 5px;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 480px){
 
 	body {
 		overflow-x: hidden;
@@ -405,7 +405,7 @@ footer {
 @media screen and (min-width: 480px) and (max-width: 768px){
 
 	body {
-		overflow-x: hidden;
+          overflow-x: hidden;
 	}
 
 	header {
