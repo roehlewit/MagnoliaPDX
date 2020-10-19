@@ -116,7 +116,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-right: 5%;
+	justify-content: center;
 }
 
 .contactbtn {
@@ -137,7 +137,7 @@ header {
 
 .aboutUs {
 	padding-top: 20px;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	text-align: center;
 	height: 100px;
 	background-color: #22aed1;
@@ -317,17 +317,26 @@ footer {
 		flex: 1;
 	}
 
-	.banner-container h1 {
+	.banner-title {
+		margin-left: 10px;
+	}
+
+	.banner-title h1 {
 		font-size: 2rem;
 	}
+
 	.banner-title p {
 		font-size: .6rem;
 		font-weight: 400;
 		letter-spacing: .5px;;
 	}
 
-	.contact-btn {
-		align-items: center;
+	.contactUs {	
+		justify-content: center;
+	}
+
+	.contact-title {
+		margin-left: 8%;
 	}
 
 	nav {
