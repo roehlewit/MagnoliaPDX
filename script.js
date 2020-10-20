@@ -1,18 +1,15 @@
 // UI Variables
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.toggle');
-
-
-
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('toggle');
 
 // EL for nav menu
 menuBtn.addEventListener('click', () => {
-	if (menu.style.display === 'none') {
-		menu.style.display = 'flex',
-		menu.style.height = 0 + '30px';
+	if (menu.style.opacity === '0') {
+		menu.style.opacity = '1';
 	} else {
-        menu.style.display = 'none';
+		menu.style.opacity = '0';
 	}
 });
 
- 
+
+AOS.init({duration: 500,});

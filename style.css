@@ -37,7 +37,7 @@ a {
 /* Header Styling */
 
 header {
-	background: url('./images/Ctablefront.jpeg') no-repeat top;
+	background: url('./images/Ctablefront.jpeg') no-repeat center;
 	background-size: cover;
 	margin: 0;
 	padding: 0;
@@ -76,11 +76,15 @@ header {
 
 /* Internal Links */
 
-.toggle {
-	display: none;
+.toggle{
+	display: flex;
+	align-items: center;
 	justify-content: center;
 	flex: 1;
+	width: 100%;
 	background: rgba(255, 255, 255, 0.7);
+	opacity: 0;
+	transition: all 250ms;
 }
 
 .toggle a {
@@ -215,10 +219,6 @@ header {
 	justify-content: center;
 }
 
-.gallery-img {
-	margin-right: 10%;
-}
-
 .gallery-btn button:active {
 	transform: scale(.98);
 	outline: none;
@@ -279,7 +279,7 @@ footer {
 	color: seashell;
 }
 .foot-title h1 {
-	margin-bottom: 0;
+	margin: 5px 0;
 }
 
 .foot-title p {
@@ -296,132 +296,11 @@ footer {
 	margin: 5px;
 }
 
-@media screen and (max-width: 480px){
+@media only screen and (max-width: 1024px) {
 
 	body {
 		margin: 0;
-		overflow-x: hidden;
-		width: 100%;
-	}
-
-	header {
-		height: 400px;
-	}
-
-	.banner-container {
-		height: 75px;
-		flex: 1;
-	}
-
-	.banner-title {
-		margin-left: 10px;
-	}
-
-	.banner-title h1 {
-		font-size: 2rem;
-	}
-
-	.banner-title p {
-		font-size: .6rem;
-		font-weight: 400;
-		letter-spacing: .5px;;
-	}
-
-	.contactUs {	
-		justify-content: center;
-		margin-right: -5%;
-	}
-
-	nav {
-		display: flex;
-		font-size: 12px;
-	}
-
-	.alexphoto,
-	.tree-img img,
-	.links i   {
-		display: none;
-	}
-
-	.contactUs {
-		height: 300px;
-	}
-
-	.contact-title {
-		margin-right: 5%;
-	}
-
-	.about-section {
-		flex-wrap: wrap;
-		justify-content: center;
-		text-align: center;
-	}
-
-	.about-section p {
-		font-size: 14px;
-	}
-
-
-	.tabletop {
-		height: 200px;
-	}
-
-	.services-bg {
 		padding: 0;
-	}
-
-	.services {
-		grid-template-columns: 1fr;
-	}
-
-	.gallery-container {
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		height: 500px;
-	}
-
-	.gallery-img {
-		margin: auto;
-	}
-	.formName {
-		padding: 10px;
-	}
-
-	.formName i {
-		font-size: 20px;
-	}
-
-	form {
-		flex-wrap: wrap;
-	}
-
-	textarea {
-		width: 200px;
-		height: 100px;
-		margin-top: 10px;
-	}
-
-	footer {
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-	}
-
-	.foot-social-media, 
-	.foot-title,
-	.foot-contact {
-		flex: 1;
-		margin-bottom: 10px;
-	}
-
-}
-
-@media screen and (min-width: 480px) and (max-width: 1024px) {
-
-	body {
-		margin: 0;
 		width: 100%;
 	}
 
@@ -449,8 +328,7 @@ footer {
 	}
 
 	textarea {
-		width: 300px;
-		height: 220px;
+		width: 250px;
 		margin-top: 10px;
 	}
 
@@ -459,12 +337,138 @@ footer {
 	}
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1300px) {
+
+@media only screen and (max-width: 480px) {
 
 	body {
 		margin: 0;
-		padding: 0;
 		overflow-x: hidden;
+	}
+
+	header {
+		height: 400px;
 		width: 100%;
 	}
+
+	.banner-container {
+		height: 75px;
+		flex: 1;
+	}
+
+	.banner-title {
+		margin-left: 10px;
+	}
+
+	.banner-title h1 {
+		font-size: 2rem;
+	}
+
+	.banner-title p {
+		font-size: .6rem;
+		font-weight: 400;
+		letter-spacing: .5px;;
+	}
+
+	nav {
+		display: flex;
+		font-size: 12px;
+	}
+
+	.alexphoto,
+	.tree-img img,
+	.links i   {
+		display: none;
+	}
+
+	.contactUs {
+		height: 300px;
+	}
+
+	.contact-title {
+		transform: translateX(-15%)
+	}
+
+	.about-section {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.about-section p {
+		font-size: 14px;
+	}
+
+	.tabletop {
+		height: 200px;
+	}
+
+	.services-bg {
+		padding: 0;
+	}
+
+	.services {
+		grid-template-columns: 1fr;
+	}
+
+	.gallery-container {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		height: 500px;
+	}
+
+	.gallery-img {
+		margin: auto;
+	}
+
+	.formName {
+		padding: 10px;
+	}
+
+	.formName i {
+		font-size: 20px;
+	}
+
+	form {
+		flex-wrap: wrap;
+	}
+
+	.form-basics {
+		margin: 0;
+		padding: 0;
+	}
+
+	textarea {
+		width: 200px;
+		height: 100px;
+		margin-top: 10px;
+	}
+
+	footer {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.foot-social-media, 
+	.foot-title,
+	.foot-contact {
+		flex: 1;
+		margin-bottom: 10px;
+	}
+
 }
+
+@media only screen and (max-width: 320px) {
+	.gallery-img img {
+		height: 150px;
+	}
+
+	.contact-title {
+		transform: translateX(-5%)
+	}
+
+}
+
+
