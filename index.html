@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
         <title>Magnolia Remodel & Woodworks, LLC Portland, OR</title>
     </head>
     <body>
@@ -89,24 +89,32 @@
 
     <div class="form-styling">
         <div class="formName"><h1>Contact Us </h1></div>
-        <form action="">
+        <form action="" class="form" id="form">
             <div class="form-basics" id="contact">
-                <div><input type="text" name="fullname" id="fullName" placeholder="Full Name"></div>
-                <div><input type="tel" name="Phone" id="phone" placeholder="Phone"></div>
-                <div><input type="email" name="Email" id="email" placeholder="Email"></div>
-                <input type="submit" href="#"></input>
+                <div class="form-inputs">
+                    <input class="input" type="text" name="fullname" id="fullName" placeholder="Full Name">
+                </div>
+                <div class="form-inputs">
+                    <input class="input" type="tel" name="Phone" id="phone" placeholder="Phone">
+                </div>
+                <div class="form-inputs">
+                    <input class="input" type="email" name="Email" id="email" placeholder="Email">
+                </div>
+                
                 <div>
-                    <select name="work" id="jobs">
-                        <label for="jobs">Please select one of the following</label>
-                        <option value="Work">Deck Repair & Construction</option>
-                        <option value="Work">Siding & Exterior Trim</option>
-                        <option value="Work">Exterior Doors & Windows</option>
-                        <option value="Work">Interior Doors</option>
-                        <option value="Work">Dry Wall & Flooring Repair</option>
-                        <option value="Work">Built-in Furniture Pieces</option>
-                        <option value="Work">Cabinet Assembly & Installation</option>
-                        <option value="Work">Custom Furniture</option>
+                    <select name="jobs" id="jobs" value="Please select one of the following">
+                        <option>Deck Repair & Construction</option>
+                        <option>Siding & Exterior Trim</option>
+                        <option>Exterior Doors & Windows</option>
+                        <option>Interior Doors</option>
+                        <option>Dry Wall & Flooring Repair</option>
+                        <option>Built-in Furniture Pieces</option>
+                        <option>Cabinet Assembly & Installation</option>
+                        <option>Custom Furniture</option>
                     </select>
+                </div>
+                <div>
+                    <button type="submit" id="submit">Submit</button>
                 </div>
             </div>
             <textarea name="" id="" cols="30" rows="10" placeholder="Please leave a detailed message."></textarea>

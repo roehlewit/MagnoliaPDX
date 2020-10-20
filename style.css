@@ -242,7 +242,7 @@ form {
 	padding: 0px 20px;
 }
 
-.form-basics input,
+.input, #submit,
 select {
 	height: 40px;
 	width: 300px;
@@ -250,6 +250,21 @@ select {
 	margin: 2px;
 	box-shadow: 1px 1px 1px;
 	border-radius: 5px;
+	outline: 0;
+}
+
+#submit {
+	margin-top: 20px;
+}
+
+#submit:hover {
+	cursor: pointer;
+}
+
+#submit:active {
+	box-shadow: 1px 1px 1px;
+	border-radius: 5px;
+	outline: 0;
 }
 
 .formName {
@@ -257,10 +272,17 @@ select {
 	padding: 20px;
 }
 
+input:focus {
+	outline: 0;
+	border: 0;
+}
+
+
 .form-basics button:active {
 	outline: none;
 	transform: scale(.98);
 }
+
 
 textarea {
 	height: 220px;
@@ -268,6 +290,7 @@ textarea {
 	box-shadow: 2px 5px 5px;
 	perspective: 100px;
 	border-radius: 5px;
+	outline: 0;
 }
 
 footer {
@@ -278,6 +301,7 @@ footer {
 	background-color: #303036;
 	color: seashell;
 }
+
 .foot-title h1 {
 	margin: 5px 0;
 }
@@ -420,6 +444,11 @@ footer {
 	.gallery-img {
 		margin: auto;
 	}
+
+	.form-styling {
+		height: 600px;
+	}
+
 
 	.formName {
 		padding: 10px;
