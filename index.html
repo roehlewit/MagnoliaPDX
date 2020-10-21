@@ -2,9 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link href="./style.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="style.min.css" rel="stylesheet" type="text/css">
+        <!--
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <title>Magnolia Remodel & Woodworks, LLC Portland, OR</title>
@@ -93,13 +95,13 @@
         <form action="" class="form" id="form">
             <div class="form-basics" id="contact">
                 <div class="form-inputs">
-                    <input class="input" type="text" name="fullname" id="fullName" placeholder="Full Name">
+                    <input required="required" class="input" type="text" name="fullname" id="fullName" placeholder="Full Name">
                 </div>
                 <div class="form-inputs">
-                    <input class="input" type="tel" name="Phone" id="phone" placeholder="Phone">
+                    <input required="required" class="input" type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone XXX-XXX-XXXX">
                 </div>
                 <div class="form-inputs">
-                    <input class="input" type="email" name="Email" id="email" placeholder="Email">
+                    <input required="required" class="input" type="email" name="Email" id="email" placeholder="Email">
                 </div>
                 
                 <div>
@@ -128,21 +130,27 @@
         <p>Remodel and Woodworks </p>
         <p>Copyright 2020&copy;</p>
         </div>
-        <div class="foot-social-media">
-            <a href="https://facebook.com" target="_blank"><i class="fa f           fa-facebook-square fa-lg"></i></a>   
-            <a href="https://instagram.com" target="_blank"><i class="fa fa fa-instagram fa-lg"></i></a>
-            <a href="https://pinterest.com" target="_blank"><i class="fa fa-pinterest fa-lg"></i></a>
-            <a href="mailto: roehlewit@gmail.com" target="_blank"><i class="fa fa-envelope fa-lg"></i></a>
+        <div class="foot-middle-flex">
+            <div class="foot-social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fa f           fa-facebook-square fa-lg"></i></a>   
+                <a href="https://instagram.com" target="_blank"><i class="fa fa fa-instagram fa-lg"></i></a>
+                <a href="https://pinterest.com" target="_blank"><i class="fa fa-pinterest fa-lg"></i></a>
+                <a href="mailto: roehlewit@gmail.com" target="_blank"><i class="fa fa-envelope fa-lg"></i></a>
+            </div>
+            <div class="foot-credit">
+                <a href="mailto:roehlewit@gmail.com"><p>Developed and designed</p><p>by Roeh Lewit</p></a>
+            </div>
         </div>
         <div class="foot-contact">
-            <p>tel: 503.999.9999</p>
+            <a href="tel:+19196238662">
+                <i class="fa fa-mobile-phone fa-lg"><span> tel: 503.999.9999</span></i>
+            </a>
             <p>204 13 N St Portland, OR</p>
         </div>
-        
     </footer>
    
     
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script src="script.js"></script>
     </body>
 </html>

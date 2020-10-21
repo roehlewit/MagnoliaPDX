@@ -17,27 +17,32 @@ body {
 
 h1 {
 	font-weight: 300;
-    font-size: 3rem;
-    text-align: center;
+	font-size: 3rem;
+	text-align: center;
 }
 
 p {
-	font-size: .8rem;
+	font-size: 0.8rem;
 	font-weight: 400;
-	letter-spacing: .5px;;
+	letter-spacing: 0.5px;
 }
 
 a {
 	font-weight: bold;
 	text-decoration: none;
-    cursor: pointer;
-    color: black;
+	cursor: pointer;
+	color: black;
+}
+
+a:hover {
+	transform: scale(1.2);
 }
 
 /* Header Styling */
 
 header {
-	background: url('./images/Ctablefront.jpeg') no-repeat center;
+	background: url('./images/Ctablefront.jpeg') no-repeat
+		center;
 	background-size: cover;
 	margin: 0;
 	padding: 0;
@@ -50,7 +55,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-    width: 100%;
+	width: 100%;
 }
 
 .banner-title {
@@ -76,7 +81,7 @@ header {
 
 /* Internal Links */
 
-.toggle{
+#toggle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -120,9 +125,11 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding-right: 0;
+	margin-left: -10%;
 }
 
-.contactbtn, 
+.contactbtn,
 .gallery-btn button {
 	height: 50px;
 	width: 150px;
@@ -131,7 +138,7 @@ header {
 	outline: 0;
 	background-color: #303036;
 	color: #fff;
-	letter-spacing: .5px;
+	letter-spacing: 0.5px;
 	font-weight: 400;
 }
 
@@ -147,12 +154,13 @@ header {
 	text-align: center;
 	height: 100px;
 	background-color: #22aed1;
+	overflow: hidden;
 }
 
 .about-section {
 	padding-bottom: 40px;
 	display: flex;
-	background-color:#22aed1;
+	background-color: #22aed1;
 }
 
 .tabletop {
@@ -166,7 +174,7 @@ header {
 	width: 50%;
 	border-radius: 50%;
 }
- 
+
 .about-description {
 	flex: 1 1 70%;
 	margin: 10px;
@@ -177,7 +185,6 @@ header {
 	font-size: 1.2rem;
 	font-weight: 300;
 }
-
 
 /* Services available  */
 
@@ -194,13 +201,11 @@ header {
 	border-radius: 5px;
 	background-color: #303036;
 	color: #fff;
-	
 }
 
 .service-box p {
 	font-weight: 300;
 }
-
 
 /* Gallery */
 
@@ -220,11 +225,11 @@ header {
 }
 
 .gallery-btn button:active {
-	transform: scale(.98);
+	transform: scale(0.98);
 	outline: none;
 }
 
-/* Form styling*/
+/* Form Contact Us styling*/
 .form-styling {
 	background-color: #d6d6d6;
 	padding: 0;
@@ -242,7 +247,8 @@ form {
 	padding: 0px 20px;
 }
 
-.input, #submit,
+.input,
+#submit,
 select {
 	height: 40px;
 	width: 300px;
@@ -251,6 +257,10 @@ select {
 	box-shadow: 1px 1px 1px;
 	border-radius: 5px;
 	outline: 0;
+}
+
+.input:valid {
+	border: 1px solid green;
 }
 
 #submit {
@@ -277,12 +287,10 @@ input:focus {
 	border: 0;
 }
 
-
 .form-basics button:active {
 	outline: none;
-	transform: scale(.98);
+	transform: scale(0.98);
 }
-
 
 textarea {
 	height: 220px;
@@ -292,6 +300,8 @@ textarea {
 	border-radius: 5px;
 	outline: 0;
 }
+
+/* Footer */
 
 footer {
 	display: flex;
@@ -310,18 +320,55 @@ footer {
 	margin-top: 0;
 }
 
+.foot-middle-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.foot-credit {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.foot-credit p {
+	color: seashell;
+	font-size: 0.65rem;
+}
+
+.foot-credit p:last-child {
+	margin-top: -10px;
+}
+
+.foot-credit p:last-child:hover {
+	color: #ec0b43;
+	transform: scale(1.2);
+}
+
 .foot-social-media a {
 	padding: 10px;
 	color: #ec0b43;
 }
 
-.foot-contact p {
-	font-size: 12px;
+.foot-social-media i:hover {
+	transform: scale(1.2);
+}
+
+.foot-contact p,
+.foot-contact span {
+	font-size: .8rem;
 	margin: 5px;
+	font-weight: 400;
+}
+
+.foot-contact a {
+	cursor: pointer;
+	color: seashell;
 }
 
 @media only screen and (max-width: 1024px) {
-
 	body {
 		margin: 0;
 		padding: 0;
@@ -361,9 +408,7 @@ footer {
 	}
 }
 
-
 @media only screen and (max-width: 480px) {
-
 	body {
 		margin: 0;
 		overflow-x: hidden;
@@ -388,9 +433,9 @@ footer {
 	}
 
 	.banner-title p {
-		font-size: .6rem;
+		font-size: 0.6rem;
 		font-weight: 400;
-		letter-spacing: .5px;;
+		letter-spacing: 0.5px;
 	}
 
 	nav {
@@ -400,7 +445,7 @@ footer {
 
 	.alexphoto,
 	.tree-img img,
-	.links i   {
+	.links i {
 		display: none;
 	}
 
@@ -409,7 +454,7 @@ footer {
 	}
 
 	.contact-title {
-		transform: translateX(-15%)
+		transform: translateX(-15%);
 	}
 
 	.about-section {
@@ -449,7 +494,6 @@ footer {
 		height: 600px;
 	}
 
-
 	.formName {
 		padding: 10px;
 	}
@@ -480,24 +524,28 @@ footer {
 		text-align: center;
 	}
 
-	.foot-social-media, 
+	.foot-social-media,
 	.foot-title,
 	.foot-contact {
 		flex: 1;
 		margin-bottom: 10px;
 	}
-
 }
 
 @media only screen and (max-width: 320px) {
+	.toggle a {
+		font-size: 0.8rem;
+	}
+
 	.gallery-img img {
 		height: 150px;
 	}
 
 	.contact-title {
-		transform: translateX(-5%)
+		transform: translateX(-5%);
 	}
 
+	.foot-social-media i {
+		font-size: 2rem;
+	}
 }
-
-
