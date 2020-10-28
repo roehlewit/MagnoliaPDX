@@ -387,6 +387,10 @@ footer {
 	margin: 0rem 2rem;
 }
 
+.gallery-page-header a {
+	padding: 1rem;
+}
+
 .gallery-section {
 	display: flex;
 	flex-wrap: wrap;
