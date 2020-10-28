@@ -589,12 +589,33 @@ footer {
 		font-size: 2rem;
 	}
 
-	.gallery-page-header p{
+	.gallery-page-header p {
 		font-size: .5rem;
 	}
 
+	#nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: .8rem;
+	}
+
+	#nav a {
+		padding: .5rem;
+	}
+
+
+	.gallery-section{ 
+		margin: 0;
+	}
+
 	.gallery-section img {
-		height: 100px;
+		height: 220px;
+	}
+
+	#backdeck {
+		height: 180px;
 	}
 }
 
